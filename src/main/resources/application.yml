@@ -1,0 +1,19 @@
+# Server Conf
+server:
+  port: 9000
+
+# Spring Conf
+spring:
+  # App Conf
+  application:
+    name: api
+  # MySQL Conf
+  datasource:
+    url: jdb:mysql://localhost:3306/noeldb
+    username: root
+    password: root
+  # JPA Conf genere ou update la base par rapport aux entites
+  jpa:
+    hibernate:
+      ddl-auto: update
+
